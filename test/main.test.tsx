@@ -17,7 +17,7 @@ const Component = ({ valueToSet }: { valueToSet: number }) => {
 }
 
 describe("functionality", () => {
-  it("adds query key in url on change", async () => {
+  it("adds query key to url on change", async () => {
     const user = userEvent.setup()
     const valueToSet = Math.random()
 
