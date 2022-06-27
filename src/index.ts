@@ -20,17 +20,21 @@ const atomWithLocation = <T>(
   options?: {
     delayInit?: boolean
     replaceState?: boolean
+    serialize?: (value: T) => string | string[]
+    deserialize?: (value: string | string[]) => any
   }
 ): WritableAtom<T, SetStateAction<T> | typeof RESET> => {
-  const serialize = (value: T) =>
+  const _serialize = (value: T) =>
     Array.isArray(value)
       ? value.map((item) => JSON.stringify(item))
       : JSON.stringify(value)
-
-  const deserialize = (value: string | string[]) =>
+  const _deserialize = (value: string | string[]) =>
     Array.isArray(value)
       ? value.map((item) => JSON.parse(item))
       : JSON.parse(value)
+
+  const serialize = options?.serialize ?? _serialize
+  const deserialize = options?.deserialize ?? _deserialize
 
   return atomWithStorage(key, initialValue, {
     getItem: (key) => {
