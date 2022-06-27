@@ -6,12 +6,14 @@ import type { UrlObject } from "url"
 
 const push = (url: UrlObject) =>
   Router.push(url, undefined, {
-    scroll: false
+    scroll: false,
+    shallow: true
   })
 
 const replace = (url: UrlObject) =>
   Router.replace(url, undefined, {
-    scroll: false
+    scroll: false,
+    shallow: true
   })
 
 const atomWithLocation = <T>(
