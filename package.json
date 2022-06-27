@@ -1,6 +1,6 @@
 {
   "name": "next-jotai-sync-location",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Sync jotai atoms with nextjs router",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -13,9 +13,12 @@
   "license": "MIT",
   "sideEffects": false,
   "peerDependencies": {
-    "jotai": ">=1.7",
-    "next": ">=12"
+    "jotai": ">=1.0.0",
+    "next": ">=11.0.0"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
