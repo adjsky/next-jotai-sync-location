@@ -11,5 +11,9 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "prettier"],
-  "rules": {}
+  "rules": {
+    "prettier/prettier": "warn",
+    "no-unused-vars": "off",
+    "no-undef": "off"
+  }
 }
