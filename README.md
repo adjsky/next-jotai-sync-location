@@ -18,7 +18,7 @@ npm install next-jotai-sync-location
 
 ## How to use
 
-Method has the same signature as atomWithHash, but you can't provide serialize / deserialize / subscribe.
+Method has the same signature as [atomWithHash](https://jotai.org/docs/utils/atom-with-hash), but you can't provide serialize / deserialize / subscribe.
 
 ```js
 import atomWithLocation from "next-jotai-sync-location"
