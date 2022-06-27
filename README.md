@@ -2,7 +2,7 @@
 
 ## Why?
 
-As dai-shi [mentioned](https://github.com/pmndrs/jotai/issues/1140#issuecomment-1118084148), there is no easy way to keep atoms in sync with window.location or the various available routers, so i wrote a simple wrapper over atomWithStorage with nextjs router support.
+As dai-shi [mentioned](https://github.com/pmndrs/jotai/issues/1140#issuecomment-1118084148), there is no easy way to keep atoms in sync with window.location or the various available routers, so i wrote a simple wrapper over [atomWithStorage](https://jotai.org/docs/utils/atom-with-storage).
 
 ## Install
 
