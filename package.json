@@ -1,6 +1,6 @@
 {
   "name": "next-jotai-sync-location",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Sync jotai atoms with Nextjs router.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -21,6 +21,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adjsky/next-jotai-sync-location.git"
+  },
   "keywords": [
     "nextjs",
     "jotai",
